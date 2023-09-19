@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="3.css">
+    <title>Trabajo #3</title>
+</head>
+<body>
+    <p id="resultado">Da click</p>
+    <script>
+        const para = document.querySelector("p");
+        para.addEventListener("click", suma);
+
+        function suma(){
+        let var1 = prompt("Da el primer valor");
+        let var2 = prompt("Da otro valor");
+        let suma = parseInt(var1) + parseInt(var2);
+
+        let resultadoPara = document.getElementById("resultado");
+        resultadoPara.textContent = "Resultado: " + suma;
+        }       
+    </script>
+        
+</body>
+</html>
